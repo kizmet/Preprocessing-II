@@ -1,0 +1,24 @@
+.navigation {
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+nav .top {
+  width: 100%;
+  padding: 10px;
+}
+nav .top ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+nav .top a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  flex-grow: 0;
+}

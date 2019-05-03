@@ -1,1 +1,297 @@
-/* LESS needs to be processed */
+/* LIBS */
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v10/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+/* BASE */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* LAYOUT / COMPONENT */
+/* 
+
+	.navigation {
+	background: white;
+	color: black;
+	display: flex;
+	align-items: center;
+	.nav-wrapper {
+		width: @container-max-width;
+		margin: auto;
+		padding: 5em;
+		align-items: center;
+	} 
+	.logo {
+				text-decoration: none;
+				color: black;
+				font-size: 3.9rem;
+				letter-spacing: 3px;
+				width: 30%;
+				font-family: @font-fun;
+				
+		}
+	.top {
+	width: 100%;
+    padding: 10px;
+    ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-evenly;
+	float:  right;
+	}
+	a {
+	text-decoration: none;
+	color: black;
+    padding: 20px;
+	}
+}
+} */
+.site-header {
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-bottom: dotted black 1px;
+  /* .site-header {
+	align-items: center;
+	background: white;
+	color: white;
+	display: flex;
+} */
+}
+.site-header .nav-wrapper {
+  width: 800px;
+  margin: auto;
+  padding: 0em;
+  align-items: center;
+}
+.site-header .site-nav {
+  background: white;
+  color: black;
+  order: 2;
+  width: 100%;
+}
+.site-header .site-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.site-header .site-nav a {
+  color: black;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.site-header .logo {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 3.9rem;
+  letter-spacing: 3px;
+  width: 30%;
+  font-family: 'Indie Flower';
+}
+@media (max-width: 600px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+  .site-nav {
+    order: 2;
+    background: #333;
+    width: 100%;
+  }
+}
+/* @import 'footer'; */
+/* @import 'home-page'; */
